@@ -66,7 +66,7 @@ public class Problema1 {
                     posicionCampo,
                     edad,
                     estatura);
-            cadenaedad= String.format("%s%d,",cadenaedad, edad);
+            cadenaedad= String.format("%s\n%d",cadenaedad, edad);
             entrada.nextLine();
             System.out.println("Desea salir del ciclo; digite: si");
             salir = entrada.nextLine();
@@ -78,7 +78,7 @@ public class Problema1 {
         promedioEdad = sumaEdades/contadorIteraciones;
         promedioEstatura = sumaEstaturas/contadorIteraciones;
         // Promedio de edades:  ?
-        cadenaReporte = String.format("%sListado edades:%s"+"Promedio de edades: %d\n", 
+        cadenaReporte = String.format("%sListado edades:%s\n"+"Promedio de edades: %d\n", 
                 cadenaReporte,cadenaedad, promedioEdad);
         // Promedio de estaturas: ?
         cadenaReporte = String.format("%sPromedio de estaturas: %.2f\n", 
